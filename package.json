@@ -1,0 +1,39 @@
+{
+  "name": "game-loop-js",
+  "version": "0.0.0",
+  "description": "Reliable game loop implementation based on requestAnimationFrame",
+  "main": "dist/bundle.cjs.js",
+  "module": "dist/bundle.esm.js",
+  "browser": "dist/bundle.umd.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "http-server ./ --silent -c-1 -o /docs/index.html"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wmcmurray/game-loop-js.git"
+  },
+  "keywords": [
+    "game",
+    "loop",
+    "gameloop",
+    "renderloop",
+    "requestAnimationFrame"
+  ],
+  "author": "William McMurray <tiwilinlove@hotmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wmcmurray/game-loop-js/issues"
+  },
+  "homepage": "https://github.com/wmcmurray/game-loop-js",
+  "devDependencies": {
+    "http-server": "^0.12.3",
+    "rollup": "^2.32.0",
+    "rollup-plugin-copy": "^3.3.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
