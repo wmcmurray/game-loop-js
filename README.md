@@ -12,6 +12,10 @@
 
 ## Usage
 
+```
+npm install @wmcmurray/game-loop-js
+```
+
 ### Three.js / requestAnimationFrame()
 
 ```javascript

@@ -1,5 +1,5 @@
 {
-  "name": "game-loop-js",
+  "name": "@wmcmurray/game-loop-js",
   "version": "1.0.0",
   "description": "Reliable and versatile game loop implementation",
   "main": "dist/bundle.cjs.js",
