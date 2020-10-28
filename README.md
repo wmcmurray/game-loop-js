@@ -1,4 +1,4 @@
-# game-loop-js
+# game-loop-js :repeat: :video_game:
 
 ## Usage
 
