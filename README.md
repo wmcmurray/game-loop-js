@@ -1,5 +1,7 @@
 # game-loop-js :video_game: :repeat:
 
+[Live demo :eyes:](https://wmcmurray.github.io/game-loop-js/)
+
 - Lightweight
 - Built with speed in mind
 - Ensure **consistent frame-rates** (based on the targeted FPS of your choosing)
