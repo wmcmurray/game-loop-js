@@ -26,13 +26,13 @@ export default {
     },
   ],
   plugins: [
-    // terser(),
+    terser(),
     copy({
       targets: [
         // move the UMD build into the docs folder (so it can be used by the live demo)
         {
           src: pkg.browser,
-          dest: 'docs/js',
+          dest: 'docs/dist',
         },
       ],
     }),

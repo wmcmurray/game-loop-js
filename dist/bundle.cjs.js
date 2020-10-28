@@ -1,0 +1,1 @@
+"use strict";module.exports=function(t,e=60){let n=0,o=0,r=0,s=0,u=0,f=0;function p(t){n=t,o=1e3/n}return p(e),{get fps(){return n},set fps(t){p(t)},loop(e){f=e-r,f>=o&&(u=s,s=f%o,r=e-s,f-=u,f*=.001,t(f))}}};
