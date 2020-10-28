@@ -10,29 +10,33 @@
 
 ## Usage
 
-
-### Three.js
+### Three.js / requestAnimationFrame()
 
 ```javascript
 import { createGameLoop } from 'game-loop-js'
 
-const gameLoop = createGameLoop(function(deltaTime) {
-  // render code...
-});
+const myGameLoop = function(deltaTime) {
+  // ...
+};
 
+// how to create a game loop with a targeted 60 FPS :
+const gameLoop = createGameLoop(myGameLoop, 60);
+
+// how to change the targeted FPS :
+gameLoop.fps = 144;
+
+// how to get the targeted FPS :
+const targetFps = gameLoop.fps;
+
+
+// how to register the loop :
+
+// using three.js
 renderer.setAnimationLoop( gameLoop.loop );
-```
 
+// -- or --
 
-### requestAnimationFrame()
-
-```javascript
-import { createGameLoop } from 'game-loop-js'
-
-const gameLoop = createGameLoop(function(deltaTime) {
-  // render code...
-});
-
+// using requestAnimationFrame
 function animate( time ) {
   gameLoop.loop( time );
   requestAnimationFrame( animate );
@@ -47,9 +51,11 @@ requestAnimationFrame( animate );
 <script type="text/javascript" src="/dist/bundle.umd.js"></script>
 
 <script type="text/javascript">
-  const gameLoop = gameLoopJs.createGameLoop(function(deltaTime) {
-    // render code...
-  });
+  const myGameLoop = function(deltaTime) {
+    // ...
+  };
+
+  const gameLoop = gameLoopJs.createGameLoop(myGameLoop);
 
   function animate( time ) {
     gameLoop.loop( time );
