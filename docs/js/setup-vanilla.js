@@ -1,6 +1,6 @@
 let timeElapsed = 0;
 
-const gameLoop = createGameLoop(function(deltaTime) {
+const gameLoop = gameLoopJs.createGameLoop(function(deltaTime) {
   timeElapsed += deltaTime;
 
   document.getElementById('result').innerHTML = Math.round(timeElapsed * 1000) / 1000;

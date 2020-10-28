@@ -1,1 +1,1 @@
-"use strict";module.exports=function(t,e=60){let n=0,o=0,r=0,s=0,u=0,f=0;function p(t){n=t,o=1e3/n}return p(e),{get fps(){return n},set fps(t){p(t)},loop(e){f=e-r,f>=o&&(u=s,s=f%o,r=e-s,f-=u,f*=.001,t(f))}}};
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.createGameLoop=function(e,t=60){let o=0,r=0,s=0,n=0,p=0,u=0;function c(e){o=e,r=1e3/o}return c(t),{get fps(){return o},set fps(e){c(e)},loop(t){u=t-s,u>=r&&(p=n,n=u%r,s=t-n,u-=p,u*=.001,e(u))}}};

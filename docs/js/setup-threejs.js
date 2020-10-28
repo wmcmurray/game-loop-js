@@ -31,7 +31,7 @@ const cubeRotationPerSeconds = cubeRotationRadian;
 const easing = function (t) { return t<.5 ? 4*t*t*t : (t-1)*(2*t-2)*(2*t-2)+1 };
 
 let isFirst = true;
-const gameLoop = createGameLoop(function(deltaTime) {
+const gameLoop = gameLoopJs.createGameLoop(function(deltaTime) {
   gameTimeElapsed += deltaTime;
   cube.rotation.y = cubeRotationRadian * easing(gameTimeElapsed % 1);
 

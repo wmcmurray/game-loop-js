@@ -9,14 +9,14 @@ export default {
     {
       file: pkg.browser,
       format: 'umd',
-      name: 'createGameLoop',
+      name: 'gameLoopJs',
     },
 
     // CommonJS build (for Node)
     {
       file: pkg.main,
       format: 'cjs',
-      exports: 'default',
+      exports: 'named',
     },
 
     // ES module build (for bundlers)

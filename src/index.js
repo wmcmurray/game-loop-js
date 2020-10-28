@@ -3,7 +3,7 @@
  * func {Function}  = The function you want to execute each frames
  * fps {Number}     = The targeted frame rate
  */
-function createGameLoop(func, fps = 60) {
+export function createGameLoop(func, fps = 60) {
   let targetFps = 0, fpsInterval = 0;
   let lastTime = 0, lastOverTime = 0, prevOverTime = 0, deltaTime = 0;
 
@@ -43,5 +43,3 @@ function createGameLoop(func, fps = 60) {
     },
   };
 }
-
-export default createGameLoop

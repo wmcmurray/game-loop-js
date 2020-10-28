@@ -1,7 +1,7 @@
 {
   "name": "game-loop-js",
   "version": "0.0.0",
-  "description": "Reliable game loop implementation based on requestAnimationFrame",
+  "description": "Reliable and versatile game loop implementation",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
   "browser": "dist/bundle.umd.js",
