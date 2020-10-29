@@ -1,6 +1,9 @@
 # game-loop-js :video_game: :repeat:
 
-[Live demo :eyes:](https://wmcmurray.github.io/game-loop-js/)
+[![npm](https://img.shields.io/npm/v/@wmcmurray/game-loop-js)](https://www.npmjs.com/package/@wmcmurray/game-loop-js)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/wmcmurray/game-loop-js.svg?logo=lgtm&logoWidth=18&label=JS%20code%20quality)](https://lgtm.com/projects/g/wmcmurray/game-loop-js/context:javascript)
+
+[![live demo](https://img.shields.io/badge/-live%20demo%20!-springgreen?style=for-the-badge)](https://wmcmurray.github.io/game-loop-js/)
 
 - Lightweight
 - Built with speed in mind
