@@ -22,7 +22,7 @@ npm install @wmcmurray/game-loop-js
 ### Three.js / requestAnimationFrame()
 
 ```javascript
-import { createGameLoop } from 'game-loop-js'
+import { createGameLoop } from '@wmcmurray/game-loop-js'
 
 const myGameLoop = function(deltaTime) {
   // ...
